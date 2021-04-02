@@ -1,0 +1,62 @@
+{
+  "name": "K-Means",
+  "features": [
+    {
+      "environment": {
+        "required": false,
+        "values": [
+          "hadoop",
+          "spark"
+        ]
+      }
+    },
+    {
+      "nodes_count": {
+        "required": false,
+        "values": [
+          4,
+          8,
+          16
+        ]
+      }
+    },
+    {
+      "data_size_gb": {
+        "required": true
+      }
+    },
+    {
+      "ram_over_hdfs": {
+        "required": false,
+        "values": [
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "compression": {
+        "required": false,
+        "values": [
+          "none",
+          "gzip",
+          "bzip2",
+          "snappy",
+          "lzo",
+          "lz4",
+          "zstd"
+        ]
+      }
+    },
+    {
+      "cluster_count": {
+        "required": false,
+        "values": [
+          4,
+          8,
+          16
+        ]
+      }
+    }
+  ]
+}
